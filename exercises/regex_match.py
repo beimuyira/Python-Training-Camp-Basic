@@ -6,6 +6,8 @@
 import re
 
 def find_emails(text):
+    email_pattern = r'\b[\w.%+-]+@[\w.-]+\.[a-zA-Z]{2,}\b'
+    return re.findall(email_pattern, text)
     """
     从文本中提取所有的电子邮件地址。
     
@@ -21,6 +23,7 @@ def find_emails(text):
 
 
 def is_valid_phone_number(phone):
+    return re.fullmatch(r'^1[3-9]\d{9}$', phone) is not None
     """
     验证字符串是否为有效的中国手机号码。
     有效的手机号码应该:
@@ -40,6 +43,8 @@ def is_valid_phone_number(phone):
 
 
 def extract_urls(text):
+    url_pattern = r'https?://(?:www\.)?[\w-]+(?:\.[\w-]+)+(?:/[^\s?#]*)*(?:\?[^#\s]*)?'
+    return re.findall(url_pattern, text, re.IGNORECASE)
     """
     从文本中提取所有的URL链接。
     

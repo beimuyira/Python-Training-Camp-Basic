@@ -8,6 +8,14 @@
 """
 
 def student_list_operations(students, operation, *args):
+    if operation == 'add':
+        students.append(args[0])
+    elif operation == 'remove':
+        students.remove(args[0])
+    elif operation == 'update':
+        students.remove(args[0])
+        students.append(args[1])
+    return students
     """
     对学生列表进行操作
     

@@ -10,6 +10,11 @@
 """
 
 def get_data_types():
+    i=42
+    j=3.14
+    k="Python编程"
+    l=True
+    return (i, j, k,l)
     """
     创建并返回不同数据类型的变量
     

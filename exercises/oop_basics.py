@@ -17,6 +17,9 @@ class Student:
     """
     
     def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
         """
         初始化学生对象
         
@@ -29,6 +32,7 @@ class Student:
         pass
     
     def print_info(self):
+        print(f"姓名: {self.name} 年龄: {self.age} 成绩: {self.grade}")
         """
         打印学生信息
         
@@ -42,6 +46,10 @@ class Student:
         pass
     
     def is_passing(self):
+        if self.grade>=60:
+            return True
+        else:
+            return False
         """
         判断学生是否通过考试
         
@@ -56,6 +64,9 @@ class Student:
 
 
 def create_student_example():
+    student=Student("张三",18,85)
+    student.print_info()
+    return student
     """
     创建一个Student类的实例并调用方法
     

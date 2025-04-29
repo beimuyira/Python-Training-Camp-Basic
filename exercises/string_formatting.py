@@ -8,6 +8,7 @@
 """
 
 def format_student_info(name, age):
+    return f"姓名: {name}, 年龄: {age}岁"
     """
     使用f-strings格式化学生信息
     

@@ -8,6 +8,13 @@
 """
 
 def skip_multiples_of_three(n):
+    list = []
+    for i in range(1, n + 1):
+        if (i % 3 != 0):
+            list.append(i)
+    return list
+
+
     """
     返回从1到n的所有非3的倍数的整数列表
     

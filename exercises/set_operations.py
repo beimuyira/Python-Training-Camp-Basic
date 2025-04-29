@@ -8,6 +8,13 @@
 """
 
 def student_set_operations(set1, set2, operation):
+    if operation == 'union':
+        return set1.union(set2)
+    elif operation == 'intersection':
+        return set1.intersection(set2)
+    elif operation == 'difference':
+        return set1.difference(set2)
+
     """
     对两个学生集合进行操作
     

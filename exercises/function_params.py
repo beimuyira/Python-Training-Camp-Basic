@@ -10,6 +10,7 @@
 """
 
 def calculate_area(length, width=None):
+    return length * width if width else length * length
     """
     计算面积
     

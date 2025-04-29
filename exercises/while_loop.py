@@ -9,6 +9,10 @@
 """
 
 def find_first_even(numbers):
+    for number in numbers:
+        if number % 2 == 0:
+            return number
+    return None
     """
     在数字列表中查找第一个偶数
     

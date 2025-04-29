@@ -8,6 +8,10 @@
 """
 
 def read_file(file_path):
+    with open(file_path,encoding='utf-8') as f:
+        content = f.read()
+    return content
+
     """
     读取文本文件内容
     
@@ -22,6 +26,12 @@ def read_file(file_path):
     pass
 
 def write_file(file_path, content):
+    try:
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(content)
+        return True
+    except Exception:
+        return False
     """
     写入内容到文本文件
     
@@ -34,4 +44,4 @@ def write_file(file_path, content):
     """
     # 请在下方编写代码
     # 使用with语句和open()函数写入内容到文件
-    pass 
+    pass

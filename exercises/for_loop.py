@@ -8,6 +8,10 @@
 """
 
 def sum_numbers(n):
+    j=0
+    for i in range(1, n + 1):
+        j=j+i
+    return j
     """
     计算从1到n的所有整数之和
     

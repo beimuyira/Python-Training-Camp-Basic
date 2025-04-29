@@ -6,8 +6,11 @@
 
 请补全下面的函数，使用math模块的sqrt函数计算平方根。
 """
+import math
+
 
 def calculate_square_root(number):
+    return math.sqrt(number)
     """
     计算数字的平方根
     

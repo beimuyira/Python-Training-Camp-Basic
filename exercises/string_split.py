@@ -8,6 +8,7 @@
 """
 
 def extract_keywords(text):
+    return text.split()
     """
     从文本中提取关键词
     
@@ -22,6 +23,7 @@ def extract_keywords(text):
     pass
 
 def parse_csv_line(csv_line):
+    return csv_line.split(',')
     """
     解析CSV格式的一行数据
     
@@ -36,6 +38,7 @@ def parse_csv_line(csv_line):
     pass
 
 def extract_name_and_domain(email):
+    return email.split('@')
     """
     从电子邮件地址中提取用户名和域名
     
